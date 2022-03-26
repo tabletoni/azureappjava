@@ -1,4 +1,14 @@
 # Maven package Java project Web App to Linux on Azure
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Pase para Azure: patrocinio (bfb0e9d6-52ad-4920-8b1b-f6762eacdf91)'
+    appType: 'webAppLinux'
+    appName: 'tabletoni2'
+    deployToSlotOrASE: true
+    resourceGroupName: 'apprg'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
+    runtimeStack: 'TOMCAT|8.5-jre8'
 # Build your Java project and deploy it to Azure as a Linux web app
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
