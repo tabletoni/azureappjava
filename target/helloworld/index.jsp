@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Prueba de pipeline de git</h2>
+<h2>Compilado nuevo war</h2>
 </body>
 </html>
